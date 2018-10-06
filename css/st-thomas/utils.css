@@ -1,0 +1,75 @@
+/* UTILS */
+
+.text {
+  font-size: 20px;
+}
+
+.playfair {
+  font-family: "Playfair Display", serif;
+}
+.poppins {
+  font-family: "Poppins", serif;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: 900;
+}
+.semibold {
+  font-weight: 700;
+}
+.regular {
+  font-weight: 500;
+}
+.extralight {
+  font-weight: 300;
+}
+.semithin {
+  font-weight: 200;
+}
+
+.large {
+  font-size: 51px;
+}
+.medium {
+  font-size: 30px;
+}
+.less {
+  font-size: 18px;
+}
+
+.spacing {
+  letter-spacing: 3px;
+}
+
+.sb {
+  display: inline-flex;
+  margin: 20px 0 5px 0;
+}
+
+/* Animations */
+
+.anim-fade {
+  opacity: 0;
+  transition: opacity 0.4s linear;
+}
+.anim-spin:before {
+  animation: spin 2s infinite linear;
+  display: inline-block;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}

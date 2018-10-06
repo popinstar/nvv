@@ -1,0 +1,151 @@
+/* Article content */
+
+.article-content {
+  box-sizing: border-box;
+  padding: 4em 0;
+  overflow: auto;
+  width: 70%;
+  margin: auto;
+}
+.article-content > div:last-child {
+  white-space: pre-line;
+}
+.article-content > div:first-child {
+  color: #000;
+  word-break: break-word;
+}
+
+/* Article header */
+
+.article-content h1 {
+  text-align: left;
+  font-size: 2.5em;
+  margin: 0;
+}
+.article-content h2 {
+  text-transform: uppercase;
+  margin-top: 0.2em;
+  font-size: 1.2em;
+}
+
+/* Article container + Sommaire */
+
+.article-content .head {
+  padding: 0;
+}
+
+.article-content .boxes-container {
+  width: 78%;
+  margin: auto;
+  text-align: justify;
+  min-width: 720px;
+  margin-top: 2.8em;
+  font-size: 1em;
+}
+
+/* Article formatting */
+
+.article-content hr {
+  border-style: solid;
+  border-color: #b6b6b5;
+  border-bottom: none;
+  margin: 3em auto;
+}
+
+.article-content .title {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 0.6em;
+  text-align: left;
+  display: flex;
+}
+
+.article-content .title:before {
+  content: "#";
+  margin-right: 10px;
+  color: #888;
+}
+
+.article-content .li {
+  display: flex;
+}
+.article-content .li i {
+  font-weight: 500;
+  font-style: normal;
+  min-width: 2em;
+  text-align: end;
+  margin-right: 0.5em;
+}
+.article-content .li.s-2 i {
+  margin-left: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+.article-content .li.s-2 i:before {
+  content: "- ";
+}
+
+/* Article loader */
+
+.article-content i.i-spin.anim-spin {
+  font-size: 3em;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0.25em auto;
+}
+.article-content i.i-spin.anim-spin.loader-full {
+  margin-top: 30vh;
+}
+
+/* Article footer */
+
+.article-content .next-button {
+  display: flex;
+  align-items: flex-end;
+  cursor: pointer;
+  user-select: none;
+  padding: 1.5em 0;
+  transition: background .3s ease;
+  justify-content: center;
+  flex-direction: column;
+} .article-content .next-button > div {
+  display: flex;
+  align-items: center;
+}
+
+.article-content .next-button h4 {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1em;
+  margin: 0;
+  line-height: 2.4em;
+}
+
+.article-content .next-button span {
+  transition: opacity .3s ease;
+  opacity: 0;
+}
+
+.article-content .next-button:hover span {
+  opacity: 1;
+}
+
+.article-content .next-button:hover i.i-right {
+  transform: rotate(90deg);
+}
+
+.article-content .next-button p {
+  margin: 0;
+}
+
+.article-content .next-button i.i-right {
+  transition: transform .3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  height: 1.65em;
+  width: 1.65em;
+  margin-left: 1em;
+}

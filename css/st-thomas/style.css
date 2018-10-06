@@ -1,0 +1,46 @@
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-track {
+  width: 2px;
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  width: 7px;
+  background: #f08785;
+}
+
+* {
+  font-family: "Poppins", serif;
+}
+
+input:focus {
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: #f3f2f0;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  color: #474644;
+  padding: 0;
+  top: 0;
+  left: 0;
+  display: flex;
+  overflow: hidden;
+}
+
+.right-panel {
+  width: 70%;
+  overflow: scroll;
+  height: 100vh;
+  position: relative;
+}

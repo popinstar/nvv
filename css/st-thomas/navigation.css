@@ -1,0 +1,141 @@
+/* Top */
+
+.top-menu {
+  width: 65%;
+  height: 60px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.top-menu > ul {
+  display: flex;
+}
+
+/* Left */
+
+.left-menu::-webkit-scrollbar-thumb,
+.right-menu::-webkit-scrollbar-thumb {
+  width: 7px;
+  background: #a29f9b;
+}
+
+.left-menu {
+  box-sizing: border-box;
+  overflow: auto;
+  width: 35%;
+  z-index: 2;
+  user-select: none;
+}
+
+.dropdown {
+  cursor: pointer;
+}
+
+.dropdown .dropdown .dropdown {
+  margin-left: 2em;
+  text-align: justify;
+  border-left: 1px solid #b5b5b5;
+}
+
+.dropdown .drop-head {
+  padding: 0.9em 1em 0.9em 2em;
+  display: flex;
+  align-items: center;
+}
+
+.main-dropdown > .drop-head {
+  padding-left: 4.5em;
+}
+
+.main-dropdown > .dropdown > .drop-head {
+  padding-left: 0;
+}
+
+.dropdown.main-dropdown:nth-child(1) > .drop-head {
+  border-top: 0px solid #4b4a49;
+}
+
+.dropdown.main-dropdown:last-child > .drop-head {
+  border-bottom: 1px solid #4b4a49;
+}
+
+.dropdown.main-dropdown > .drop-head {
+  border-top: 1px solid #4b4a49;
+  transition: color .3s ease, background .3s ease;
+  color: #4b4a49;
+  position: relative;
+}
+
+.dropdown .drop-head:before {
+  content: "+";
+  position: absolute;
+  background: #4b4a49;
+  color: #fff;
+  right: 1em;
+  font-size: 1.5em;
+  height: 1.1em;
+  width: 1.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.dropdown.main-dropdown > .drop-head[data-display='block'],  .dropdown.main-dropdown > .drop-head:hover {
+  color: #fff;
+  background: #4b4a49;
+}
+
+.dropdown .drop-head[data-display='block']:before {
+  content: "-";
+}
+
+.dropdown .dropdown .drop-head:before {
+  display: none;
+}
+
+.dropdown .dropdown .drop-head[data-display='none'] > i {
+  transform: rotate(-90deg);
+}
+
+.dropdown .dropdown, .dropdown .drop-head {
+  transition: background .2s ease;
+}
+
+.dropdown .dropdown .drop-head:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.dropdown .drop-head > i.ic {
+  transition: transform .2s ease;
+  font-size: 1.8em;
+  padding: 0 0.5em 0 0.3em;
+  width: 2em;
+  text-align: center;
+}
+
+.dropdown .drop-head p {
+  display: inline-grid;
+  width: 100%;
+  margin: 1em 0;
+  padding-right: 2em;
+}
+
+.dropdown .dropdown .dropdown .drop-head p {
+  margin: 1em 0 1em .5em;
+}
+
+.dropdown .drop-head p b {
+}
+
+.dropdown .drop-head p i {
+  font-style: normal;
+  font-size: 0.9em;
+}
+
+.dropdown.main-dropdown > .drop-head p i {
+  font-style: normal;
+  font-size: 1.1em;
+  font-weight: 400;
+}

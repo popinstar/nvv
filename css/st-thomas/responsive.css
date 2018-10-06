@@ -1,0 +1,19 @@
+/* 4K */
+
+@media screen and (min-width: 2500px) {
+  .dropdown .drop-head p i {
+    font-size: 1em;
+  }
+
+  .article-content h1 {
+    font-size: 3em;
+  }
+  .article-content h2 {
+    font-size: 1.6em;
+  }
+  .article-content .boxes-container {
+    font-size: 1.1em;
+    width: 70%;
+    letter-spacing: 0.03em;
+  }
+}
